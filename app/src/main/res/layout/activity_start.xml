@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#415AAB"
+    tools:context="com.sravan.demoapp.StartActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:text="Application Demo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/contents"
+        android:text="Listview and Google Map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"/>
+
+
+    <ImageView
+        android:id="@+id/listIcon"
+        android:layout_below="@+id/contents"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/listviewicon"/>
+
+    <ImageView
+        android:id="@+id/markerIcon"
+        android:layout_below="@+id/contents"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/marker"/>
+
+    <Button
+        android:id="@+id/getStartedBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Get Started"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

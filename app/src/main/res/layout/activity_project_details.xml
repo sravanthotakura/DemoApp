@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#415AAB"
+    tools:context="com.sravan.demoapp.ProjectDetails">
+
+    <ScrollView
+        android:id="@+id/scrollList"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            
+            <TextView
+                android:id="@+id/projectNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Project Name"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/projectNameEditView"
+                android:layout_below="@+id/projectNameTextView"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/spinner_style"/>
+
+            <TextView
+                android:id="@+id/addressTextView1"
+                android:layout_below="@+id/projectNameEditView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Address Line 1"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/addressEditText1"
+                android:layout_below="@+id/addressTextView1"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/spinner_style"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:id="@+id/addressTextView2"
+                android:layout_below="@+id/addressEditText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Address Line 2"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/addressEditText2"
+                android:layout_below="@+id/addressTextView2"
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/spinner_style"
+                android:scrollbars="vertical"/>
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_below="@+id/addressEditText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="City"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/cityEditView"
+                android:layout_below="@+id/cityTextView"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/spinner_style"
+                />
+
+            <TextView
+                android:id="@+id/projectDescTextView"
+                android:layout_below="@+id/cityEditView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Project Details"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/projectDescEditView"
+                android:layout_below="@+id/projectDescTextView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/spinner_style"
+                />
+
+            <TextView
+                android:id="@+id/builderLogoTextView"
+                android:layout_below="@+id/projectDescEditView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Builder Logo"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <ImageView
+                android:id="@+id/builderLogoImageView"
+                android:layout_below="@+id/builderLogoTextView"
+                android:layout_width="350dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/builderDescTextView"
+                android:layout_below="@+id/builderLogoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Builder Description"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <EditText
+                android:id="@+id/builderDescEditView"
+                android:layout_below="@+id/builderDescTextView"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/spinner_style"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mapBtn"
+        android:layout_below="@+id/scrollList"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="View on Map"/>
+
+</RelativeLayout>
